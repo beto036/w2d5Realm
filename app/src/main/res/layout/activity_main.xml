@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/aMainTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Libros"
+        style="@style/Base.TextAppearance.AppCompat.Title"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="20dp"
+        android:id="@+id/a_main_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/Widget.AppCompat.ListView"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/plus256"
+        android:onClick="add"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:src="@drawable/minus"
+        android:onClick="deleteAll"/>
+
+</FrameLayout>
